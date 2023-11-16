@@ -1,5 +1,28 @@
+body {
+    display:flex;
+}
+
+#column-1 {
+    border: 2px red solid;
+    height: 100vh;
+    min-width: 450px;
+    flex: 2 1 33vw;
+    background-image: url("../imgs/dream-house.jpg");
+    background-size: cover;
+    background-position: top left;
+}
+
+#column-2 {
+    border: 2px orange solid;
+    width: 66vw;
+    height: 100vh;
+    flex: 1 2 auto;
+
+}
+
 .display {
     border: 2px blue solid;
-    width: 400px;
+    width: 300px;
+    min-width: 250px;
     height: 500px;
 }
