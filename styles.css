@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
 body {
     display:flex;
+    font-family: "italiana", sans-serif;
 }
 
 #column-1 {
-    border: 2px red solid;
-    height: 100vh;
+    height: 100dvh;
     min-width: 450px;
-    flex: 2 1 33vw;
+    flex: 1 1 33dvw;
     background-image: url("../imgs/dream-house.jpg");
     background-size: cover;
     background-position: top left;
@@ -14,10 +16,20 @@ body {
 
 #column-2 {
     border: 2px orange solid;
-    width: 66vw;
-    height: 100vh;
+    width: 66dvw;
+    height: 100dvh;
     flex: 1 2 auto;
+}
 
+.shader {
+    display: flex;
+    background-color: rgba(0,0,0,0.7);
+    height: 200px;
+    position: relative;
+    top: 30%;
+    align-items: center;
+    justify-content:center;
+    margin: auto;
 }
 
 .display {
@@ -25,4 +37,25 @@ body {
     width: 300px;
     min-width: 250px;
     height: 500px;
+}
+
+.companyName {
+    color: white;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-img {
+    vertical-align: middle;
 }
