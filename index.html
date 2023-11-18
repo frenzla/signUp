@@ -22,62 +22,57 @@
         </div>
     </div>
     <div class="column" id="column-2">
-        <fieldset class="display">
-            <legend>Contact Details</legend>
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" placeholder="Bob..." name="first_name">
-            <br>
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob">
-            <br>
-            <select name="fashion">
-                <optgroup label="Clothing">
-                  <option value="t_shirt">T-Shirts</option>
-                  <option value="sweater">Sweaters</option>
-                  <option value="coats">Coats</option>
-                </optgroup>
-                <optgroup label="Foot Wear">
-                  <option value="sneakers">Sneakers</option>
-                  <option value="boots">Boots</option>
-                  <option value="sandals">Sandals</option>
-                </optgroup>
-            </select>
-            <br>
-            <h1>Ticket Type</h1>
-            <div>
-                <input type="radio" id="child" name="ticket_type" value="child">
-                <label for="child">Child</label>
+        <div class="split-column-2">
+            <div class="header">
+                <div class="block">
+                    <p>The world's most exclusive homes and services, with every element tailored to you</p>
+                    <p>Experience the finest luxury vacation rentals in the world with onefinestay. Choose from a curated collection of luxury villas, apartments, and homes for your holidays, your city-break or just to chill somewhere you love. We are only satisfied with the best.</p>
+                </div>
             </div>
-            <div>
-                <input type="radio" id="adult" name="ticket_type" value="adult">
-                <label for="adult">Adult</label>
+            <div class="form-section">
+                <div class="block">
+                    <p>Sign up now to get started</p>
+                    <fieldset class="form">
+                        <div class="row">
+                            <div class="col">
+                                <label for="first_name">First Name</label>
+                                <input type="text" id="first_name" placeholder="John..." name="first_name"/>
+                            </div>
+                            <div class="col">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" id="last_name" placeholder="Wick..." name="last_name"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" placeholder="john.wick@yopmail.com" name="email"/>
+                            </div>
+                            <div class="col">
+                                <label for="phone_number">Phone Number</label>
+                                <input type="text" id="phone_number" placeholder="+1 415 753 6227" name="phone_number"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="psw">Password</label>
+                                <input type="text" id="psw" name="psw"/>
+                            </div>
+                            <div class="col">
+                                <label for="confirm_psw">Confirm Password</label>
+                                <input type="text" id="confirm_psw" name="confirm_psw"/>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
             </div>
-            <div>
-                <input type="radio" id="senior" name="ticket_type" value="senior">
-                <label for="senior">Senior</label>
+            <div class="footer">
+                <div class="block">
+                    <button type="submit">Create Account</button>
+                    <p class="login-text">Already have an account? <a href="#">Log In</a></p>
+                </div>
             </div>
-            <h1>Pizza Toppings</h1>
-            <div>
-            <input type="checkbox" id="sausage" name="topping" value="sausage">
-            <label for="sausage">Sausage</label>
-            </div>
-            <div>
-            <input type="checkbox" id="onions" name="topping" value="onions">
-            <label for="onions">Onions</label>
-            </div>
-            <div>
-            <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
-            <label for="pepperoni">Pepperoni</label>
-            </div>
-            <div>
-            <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
-            <label for="mushrooms">Mushrooms</label>
-            </div>
-            <br>
-            <button>Click Me</button>
-            <br>
-            <input type="week" id="color" name="color">
-        </fieldset>
+        </div>
     </div>
 </body>
 </html>
