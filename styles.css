@@ -7,23 +7,43 @@ body {
 
 #column-1 {
     height: 100dvh;
-    min-width: 450px;
-    flex: 1 1 33dvw;
+    flex: 1 1 40%;
     background-image: url("../imgs/dream-house.jpg");
     background-size: cover;
     background-position: top left;
 }
 
 #column-2 {
-    border: 2px orange solid;
-    width: 66dvw;
-    height: 100dvh;
-    flex: 1 2 auto;
-}
-
-.split-column-2 {
+    border: solid lawngreen 3px;
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    height: 100dvh;
+    flex: 1 1 60%;
+}
+
+.header {
+    background-color: rgb(236, 236, 236);
+    min-height: 30dvh;
+    border: solid red 1px;
+    display: flex;
+    flex : 1;
+}
+
+.form-section {
+    min-height: 25dvh;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    flex : 1;
+}
+
+.footer {
+    background-color: rgb(236, 236, 236);
+    flex: 1;
+    border: solid red 1px;
+    display: flex; 
 }
 
 .shader {
@@ -75,13 +95,6 @@ body {
     vertical-align: middle;
 }
 
-.header, .footer {
-    background-color: rgb(236, 236, 236);
-    min-height: 35dvh;
-    border: solid red 1px;
-    display: flex;
-}
-
 .block {
     margin: auto;
     display: flex;
@@ -94,13 +107,6 @@ body {
 
 p {
     border: blue solid 1px;;
-}
-
-.form-section {
-    min-height: 30dvh;
-    border: solid black 1px;
-    display: flex;
-    flex-direction: column;
 }
 
 .row {
@@ -133,7 +139,7 @@ div > p.login-text {
 }
 
 p {
-    font-size: clamp(1rem, 1.5vw, 1.4rem);
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
     font-weight: bold;
 }
 
@@ -150,4 +156,17 @@ button {
 a {
     color: #5a005d;
     text-decoration: none;
+}
+
+input:not(:placeholder-shown):invalid {
+    border: 1px solid red;
+  }
+
+input:focus {
+    border-color: rgb(138, 138, 254);
+    background-color: rgb(236, 234, 234);
+}
+
+.error {
+    color:red;
 }
